@@ -151,7 +151,7 @@
     font-weight: bold;
   }
 
-  .text::after {
+  .heading.tm-content-box .padding-medium li:nth-child(1)::after, .heading.tm-content-box .padding-medium li:nth-child(3)::after  {
     content: "New";
     color: #ff0000;
     font-weight: bold;
