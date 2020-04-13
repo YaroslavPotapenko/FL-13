@@ -212,8 +212,8 @@ body {
       z-index: -1000; }
   .section_link {
     font-size: 21px;
-    padding-top: 20px;
-    color: #adc3ce; }
+    color: #adc3ce;
+    padding-top: 20px; }
 
 .footer {
   width: 100%;

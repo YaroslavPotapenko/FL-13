@@ -17,6 +17,11 @@
 	}
 }
 
+@mixin link {
+	font-size: 21px;
+	color: $section-card-text-link-color;
+}
+
 %header-underline {
 	content: '';
 	width: 380px;
@@ -258,9 +263,8 @@ body {
 	}
 
 	&_link {
-		font-size: 21px;
+		@include link();
 		padding-top: 20px;
-		color: $section-card-text-link-color;
 	}
 }
 
