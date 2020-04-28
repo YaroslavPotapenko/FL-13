@@ -2,11 +2,11 @@ let game = confirm('Do you want to play a game?');
 if(!game) {
 	alert('You did not become a billionaire, but can.');
 } else {
-	const attempts = 3;
-	const numBigger = 5;
-	const doublePrize = 2;
-	const counter = 2;
-	const pow = 2;
+	const ATTEMPTS = 3;
+	const NUM_BIGGER = 5;
+	const DOUBLE_PRIZE = 2;
+	const COUNTER = 2;
+	const POW = 2;
 	while(game) {
 		let maxRange = 5;
 		let totalPrize = 0;
@@ -15,19 +15,19 @@ if(!game) {
 		while (continueGame) {
 			let randomNumber = Math.floor(Math.random() * (maxRange + 1));
 			let isNumber = false;
-			for (let i = 0; i < attempts; i++) {
-				let currentPossiblePrize = prize / Math.pow(pow, i);
+			for (let i = 0; i < ATTEMPTS; i++) {
+				let currentPossiblePrize = prize / Math.pow(POW, i);
 				let userNumber = Number(prompt(
 					`Choose a roulette pocket number from 0 to ${maxRange}
-Attempts left:  ${attempts - i}
+Attempts left:  ${ATTEMPTS - i}
 Total prize: ${totalPrize}$
 Possible prize on current attempt: ${currentPossiblePrize}$`));
 				if (randomNumber === userNumber) {
 					totalPrize += currentPossiblePrize;
-					currentPossiblePrize *= pow;
+					currentPossiblePrize *= POW;
 					break;
 				} else {
-					if (i === counter) {
+					if (i === COUNTER) {
 						isNumber = true;
 						break;
 					}
@@ -38,8 +38,8 @@ Possible prize on current attempt: ${currentPossiblePrize}$`));
 			}
 			continueGame = confirm(`Congratulation, you won! Your prize is: ${totalPrize}$. Do you want to continue?`);
 			if (continueGame) {
-				maxRange += numBigger;
-				prize *= doublePrize;
+				maxRange += NUM_BIGGER;
+				prize *= DOUBLE_PRIZE;
 			} else {
 				break;
 			}
