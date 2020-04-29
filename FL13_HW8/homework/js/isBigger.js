@@ -1,2 +1,2 @@
 let isBigger = (a,b) => a > b;
-isBigger();
+console.log(isBigger(5,-1));

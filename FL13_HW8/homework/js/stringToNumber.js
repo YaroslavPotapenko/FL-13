@@ -1,2 +1,2 @@
 let stringToNumber = str => Number(str);
-stringToNumber();
+console.log(stringToNumber('1258'));

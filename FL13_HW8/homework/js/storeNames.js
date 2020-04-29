@@ -1,4 +1,4 @@
 let storeNames = function () {
     return [...arguments];
 }
-storeNames();
+console.log(storeNames('Nick Fury', 'Iron Man', 'Doctor Strange'));
