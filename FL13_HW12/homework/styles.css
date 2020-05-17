@@ -1,0 +1,66 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+#root {
+	display: flex;
+	flex-direction: row;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+#root div {
+	height: 100vh;
+	box-sizing: border-box;
+}
+.list-books {
+	flex: 1 1 300px;
+	display: flex;
+}
+.list-books ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+.list-books ul li {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	border-bottom: 1px solid rgb(226, 226, 226);
+}
+.list-books ul li a {
+	text-decoration: none;
+}
+.list-books ul li input {
+	margin-left: 10px;
+}
+.list-books ul li:last-child {
+	border: none;
+}
+#add {
+	padding: 5px;
+}
+button {
+	background: rgba(241, 241, 241, 0.637);
+	border: 1px solid rgb(226, 226, 226);
+}
+button:hover {
+	background: rgba(224, 224, 224, 0.774);
+	border: 1px solid rgb(187, 187, 187);
+}
+.book {
+	flex: 5 3 300px;
+	text-align: center;
+	align-items: center;
+}
+.book ul li {
+	list-style: none;
+	padding: 10px;
+}
+.book ul li input {
+	height: 30px;
+}
+.book ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
