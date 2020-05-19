@@ -1,0 +1,13 @@
+body {
+	font-family: sans-serif;
+}
+header .header__logo {
+	font-size: 30px;
+}
+img {
+	width: 100%;
+}
+.action {
+	background-color: #ff7f50;
+	color: #ffffff;
+}
