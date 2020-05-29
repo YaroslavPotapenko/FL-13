@@ -1,0 +1,31 @@
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.add {
+	margin-bottom: 20px;
+}
+#app-container {
+	text-align: center;
+	margin: 40px 0;
+	position: relative;
+}
+.users-list {
+	text-align: center;
+}
+.users-list li{
+	display:inline;
+}
+.list-group-item:first-child {
+	margin-right: 50px;
+}
+.loading {
+	width: 100px;
+	height: 32px;
+	position: fixed;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	display: none;
+}
